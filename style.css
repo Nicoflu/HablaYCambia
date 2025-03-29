@@ -1,0 +1,1729 @@
+html, body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: #d3d3d3;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+/*==============COLORES LETRA*/
+.letra-gris,
+.discurso .titulo strong,
+body
+{ color: rgb(120, 120, 120); }
+
+.letra-gris-azul,
+.menu .logo,
+.titulo
+{ color: rgb(129, 136, 148); }
+
+.letra-blanca,
+.menu a,
+.capacidad,
+.slogan .titulo,
+.genera-valor>.titulo,
+.genera-valor>.parrafo,
+.pie-pagina,
+.tarjeta.caso:hover,
+.tarjeta.caso:hover .titulo  
+{ color: white}
+
+.letra-azul-syner,
+.sinergias .titulo b
+{ color: rgb(63, 139, 245); }
+
+.letra-azul-cielo
+{ color: rgb(63, 169, 245); }
+
+.letra-azul-electrico,
+.genera-valor .tarjetas::before,
+.plataforma .titulo b,
+.casos>.titulo strong
+{ color: rgb(57, 113, 246); }
+
+.letra-azul-oscuro
+{ color: rgb(0, 47, 156); }
+
+.letra-verde,
+.beneficio::before,
+.beneficios .titulo b
+{ color: rgb(101, 201, 54); }
+
+/*==============COLORES FONDO*/
+
+.fondo-azul-syner,
+.banner,
+.svg-icon .forma,
+.articulo .imagen
+{ background-color: rgb(63, 139, 245); fill: rgb(63, 139, 245); }
+
+.fondo-azul-electrico2,
+.banner::before,
+.pie-pagina,
+.tarjeta.caso:hover,
+.tarjeta.caso:nth-child(even):hover,
+.tarjeta.caso:nth-child(odd):hover,
+.tarjeta.caso:hover .svg.grupo,
+.articulo:nth-child(odd) .imagen
+{ background-color: rgb(0, 114, 245); }
+
+.fondo-azul-oscuro
+{ background-color: rgb(0, 47, 156); }
+
+.fondo-azul-oscuro.fondo-alfa50,
+.menu
+{ background-color: rgba(0, 47, 156,.5); }
+
+.fondo-blanco,
+.menu .logo,
+.discurso,
+.seccion,
+.tarjeta.caso:hover .svg.grupo .forma
+{ background-color: rgb(255, 255, 255); fill: rgb(255,255,255) }
+
+.fondo-verde,
+.menu .cta,
+.slogan:before,
+.casos .btn.cta
+{ background-color: rgb(101, 201, 54); }
+
+
+/*==============COLORES BORDE*/
+
+.borde-azul-electrico,
+.slogan
+{ border-color: rgb(57, 113, 246); }
+
+.borde-arriba-azul-electrico
+{ border-top-color: rgb(57, 113, 246); }
+.borde-abajo-azul-electrico
+{ border-bottom-color: rgb(57, 113, 246); }
+.borde-derecha-azul-electrico
+{ border-right-color: rgb(57, 113, 246); }
+.borde-izquierda-azul-electrico
+{ border-left-color: rgb(57, 113, 246); }
+
+
+/*==============LETRA*/
+.letra-1
+, body
+{ font-family: 'Open Sans', sans-serif; }
+
+.letra-2,
+.menu a,
+.slogan strong,
+.titulo strong,
+.tarjetas .titulo,
+.plataforma .titulo b,
+.casos>.titulo b
+{ font-family: 'Montserrat', sans-serif; }
+
+.letra-3,
+.slogan,
+.titulo
+{ font-family: 'Exo', sans-serif; }
+
+.letra-icon.fa,
+.icon-fa::before,
+.icon-fa::after,
+.icon-fa-despues::after
+{ font-family: 'FontAwesome';}
+
+.letra-icon.md,
+.icon-md::before,
+.icon-md::after,
+.icon-md-despues::after
+{ font-family: 'Material Icons';}
+
+.letra-icon.md2,
+.icon-md2::before,
+.icon-md2::after,
+.icon-md2-despues::after
+{ font-family: 'Material-Design-Iconic-Font';}
+
+.icon-fa.contacto::before,
+.icon-fa-despues.contacto::after
+{ content: '\f0e6'; }
+
+.icon-fa.grafico-torta::before
+{ content: '\f200';}
+
+.icon-fa.organigrama::before
+{ content: '\f0e8';}
+
+.icon-fa.medidor::before
+{ content: '\f0e4';}
+
+.icon-fa.engranaje::before
+{ content: '\f085';}
+
+.icon-fa.graficas-top::before
+{ content: '\f201';}
+
+.icon-fa.banco::before
+{ content: '\f19c';}
+
+.icon-fa.rapidez::before
+{ content: '\f0e7';}
+
+.icon-fa.dolar::before
+{ content: '\f155';}
+
+.icon-fa.lista::before
+{ content: '\f022';}
+
+.icon-fa.checar-positivo::before
+{ content: '\f046';}
+
+/*=====================ICONOS SVG BACKGROUNDS*/
+
+.icono.svg{
+  display: inline-block;
+}
+
+.icono.svg::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+}
+
+.icono.antena::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/antena.svg');
+}
+
+.icono.barco::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/barco.svg');
+}
+
+.icono.semaforo::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/semaforo.svg');
+}
+
+.icono.camion::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/camion.svg');
+}
+
+.icono.educacion::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/educacion.svg');
+}
+
+.icono.celular::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/celular.svg');
+}
+
+.icono.compras::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/compras.svg');
+}
+
+.icono.engranes::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/engranes.svg');
+}
+
+.icono.nevera::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/nevera.svg');
+}
+
+.icono.gasolina::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/gasolina.svg');
+}
+
+.icono.avion::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/avion.svg');
+}
+
+.icono.router::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/router.svg');
+}
+
+.icono.chip::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/chip.svg');
+}
+
+.icono.portatil::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/portatil.svg');
+}
+
+.icono.empresa::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/empresa.svg');
+}
+
+.icono.chip2::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/chip2.svg');
+}
+
+.icono.integre::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/icono-integre.svg');
+}
+
+.icono.monitoree::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/icono-monitor.svg');
+}
+
+.icono.descubra::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/icono-descubra.svg');
+}
+
+.icono.aprenda::before{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/icono-aprenda.svg');
+}
+
+/*IMAGENES*/
+
+/*FONDOS*/
+.fondo-industral-iot,
+.genera-valor{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-industrial-synermetrix-movil.jpg') ;
+}
+
+.fondo-cielo,
+.banner
+{  
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/cielo-movil.jpg');
+}
+
+.fondo-logo,
+.logo .img-logo{  
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/logo-synermetrix-animated.svg');
+}
+
+.fondo-card-industrial,
+.caso.industrial{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-industrial-movil.jpg');
+}
+
+.fondo-card-manufactura,
+.caso.manufactura{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-manufactura-movil.jpg');
+}
+
+.fondo-card-automotriz,
+.caso.automotriz{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-automotriz-movil.jpg');
+}
+
+.fondo-card-agricola,
+.caso.agricola{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-agricola-movil.jpg');
+}
+
+.fondo-card-agricola,
+.caso.agricola{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-agricola-movil.jpg');
+}
+
+.fondo-card-smartcity,
+.caso.smartcity{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-smartcities-movil.jpg');
+}
+
+.fondo-card-construccion,
+.caso.construccion{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-construccion-movil.jpg');
+}
+
+.fondo-card-reparacion,
+.caso.reparacion{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-reparacion-movil.jpg');
+}
+
+.fondo-card-energia,
+.caso.energia{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-energia-movil.jpg');
+}
+
+.fondo-card-logistica,
+.caso.logistica{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-logistica-movil.jpg');
+}
+
+.fondo-card-salud,
+.caso.salud{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-salud-movil.jpg');
+}
+
+/*//////////////////////////////////
+==============CLASES PERSONALIZADAS
+//////////////////////////////////*/
+
+.seccion{
+  position: relative;
+  z-index: 3;
+  min-height: 50vh;
+  padding: 3em 2em;
+  padding: 10vmin 2em;
+}
+
+.enlace{
+  text-decoration: none;
+}
+
+.oculto{
+  display: none !important; 
+}
+
+.enlinea{
+  font-size: 0;
+  letter-spacing: 0;
+}
+
+.enlinea>*{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1rem;
+  letter-spacing: initial;
+}
+
+.grupo{
+  list-style-type: none;
+}
+
+.seccion .titulo{
+  font-weight: normal;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+.pie-pagina{
+  position: relative;
+  z-index: 10;
+}
+
+.parrafo
+{
+  margin: auto;
+}
+
+.btn{
+  padding: 1em 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 1.5em;
+  display: inline-block;
+  color: white;
+}
+
+/*=================================MENU*/
+
+.menu{
+  background-blend-mode: multiply;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.menu .logo,
+.menu .botonera,
+.menu .cta{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu .logo{
+  border-radius: 0 0 2em 2em;
+  box-shadow: 0 0 1em rgba(5, 64, 172,.5);
+  display: inline-block;
+  margin: -0.5em auto;
+  padding: 1em 1.6em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform-origin: 50% 0;
+  transform: scale(1.1);
+  width: 14em;
+}
+
+.logo .img-logo,
+.logo .logotipo{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.synermetrix .logo .img-logo{
+  background-size: auto 95%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2em;
+  height: 2em;
+}
+
+.logo .logotipo{
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.menu .botonera{
+  padding: 0 1em;
+  text-align: right;
+  width: 60%;
+  width: calc((96% - (14em + 14em)));
+}
+
+.menu .botonera li{
+  display: inline-block;
+}
+
+.menu .enlace{
+  padding: 0.2em .6em;
+  font-size: 0.65em;
+}
+
+.menu .cta{
+  width: 14em;
+  padding: 0.6em 1em;
+  border-radius: 1.2em ;
+}
+
+.menu .contacto::before{
+  padding-right: .6em;
+  font-size: 1.2em;
+}
+
+/*=================================CONTENIDO*/
+
+.contenido{
+  background-color: #fff;
+  padding-top: 30em;
+}
+
+/*=================================BANNER*/
+
+.banner{
+  min-height: 30em;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.banner::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: .7;
+}
+
+.banner::after{
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/ciudad-grafismo.png');
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+  background-position: center;
+  height: 8em;
+  width: 100%;
+  opacity: .5;
+  z-index: 1;
+}
+
+
+/*========ILUSTRACION*/
+
+.ilustracion{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: 
+    radial-gradient(
+      ellipse at center, 
+      rgba(255,255,255,1) 0%,
+      rgba(255,255,255,1) 5%,
+      rgba(255,255,255,0.3) 40%,
+      rgba(255,255,255,0) 60%);
+  background-size: 40em 32em;
+  background-repeat: no-repeat;
+  background-position: 50% -4.5em;
+}
+
+.ilustracion::before{  
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/circuito.svg');
+  background-repeat: no-repeat;
+  background-position: 50% -4em;
+  background-size: auto 30em;
+}
+
+.ilustracion::after{
+  content: '';
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;  
+  left: 25%;
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/dedo-mano-movil.png');
+  background-size: auto 150%;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  z-index: 4;
+}
+
+.nube{
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  top: 9em;
+  left: calc(50% - 2.5em);
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono-nube.svg');
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0.1em 0.2em 0 rgb(63, 139, 245));
+  -webkit-animation: peque-grande .6s ease 0s;
+          animation: peque-grande .6s ease 0s;
+}
+
+.nube::before
+{
+  content: '';
+  position: absolute;
+  top: 0.9em;
+  left: 0.9em;
+  width: 3.2em;
+  height: 3.2em;
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/logo-synermetrix-animated.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grupo .iconos{
+  border-radius: 50%;
+  width: 12em;
+  height: 12em;
+  position: absolute;
+  top: 5.4em;
+  left: calc(50% - 5.9em);
+  box-shadow: 0 0 0 2em rgba(63, 169, 245,.4);
+  z-index: 6;
+  will-change: transform;
+  -webkit-animation: rotan-iconos linear 48s 3s infinite;
+          animation: rotan-iconos linear 48s 3s infinite; /*steps(16, end)*/
+}
+
+/*ICONOS*/
+
+.iconos .icono{
+  position: absolute;
+  top: -2em;
+  left: 6em;
+  transform-origin: center;
+  height: 16em;
+  transform: scale(0.6);
+}
+
+.iconos .icono:before{
+  position: absolute;
+  top: 0;
+  left: 0em;
+  width: 2em;
+  height: 2em;
+  background-size: 0.8em auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.iconos .icono:nth-child(1)
+{  transform: rotate(16deg);
+   transform: rotate(calc( (360 / 16) * 1deg) ) }
+
+.iconos .icono:nth-child(2)
+{  transform: rotate(32deg);
+   transform: rotate(calc( (360 / 16) * 2deg) ) }
+
+.iconos .icono:nth-child(3)
+{  transform: rotate(48deg);
+   transform: rotate(calc( (360 / 16) * 3deg) ) }
+
+.iconos .icono:nth-child(4)
+{  transform: rotate(64deg);
+   transform: rotate(calc( (360 / 16) * 4deg) ) }
+
+.iconos .icono:nth-child(5)
+{  transform: rotate(80deg);
+   transform: rotate(calc( (360 / 16) * 5deg) ) }
+
+.iconos .icono:nth-child(6)
+{  transform: rotate(96deg);
+   transform: rotate(calc( (360 / 16) * 6deg) ) }
+
+.iconos .icono:nth-child(7)
+{  transform: rotate(112deg);
+   transform: rotate(calc( (360 / 16) * 7deg) ) }
+
+.iconos .icono:nth-child(8)
+{  transform: rotate(128deg);
+   transform: rotate(calc( (360 / 16) * 8deg) ) }
+
+.iconos .icono:nth-child(9)
+{  transform: rotate(144deg);
+   transform: rotate(calc( (360 / 16) * 9deg) ) }
+
+.iconos .icono:nth-child(10)
+{  transform: rotate(160deg);
+   transform: rotate(calc( (360 / 16) * 10deg) ) }
+
+.iconos .icono:nth-child(11)
+{  transform: rotate(176deg);
+   transform: rotate(calc( (360 / 16) * 11deg) ) }
+
+.iconos .icono:nth-child(12)
+{  transform: rotate(192deg);
+   transform: rotate(calc( (360 / 16) * 12deg) ) }
+
+.iconos .icono:nth-child(13)
+{  transform: rotate(208deg);
+   transform: rotate(calc( (360 / 16) * 13deg) ) }
+
+.iconos .icono:nth-child(14)
+{  transform: rotate(224deg);
+   transform: rotate(calc( (360 / 16) * 14deg) ) }
+
+.iconos .icono:nth-child(15)
+{  transform: rotate(240deg);
+   transform: rotate(calc( (360 / 16) * 15deg) ) }
+
+.iconos .icono:nth-child(16)
+{  transform: rotate(256deg);
+   transform: rotate(calc( (360 / 16) * 16deg) ) }
+
+.slogan{
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  z-index: 5;
+  text-align: center;
+  width: 100%;
+  padding: 1.5em;
+  border-bottom-width: 1em;
+  border-bottom-style: solid;
+}
+
+.slogan .titulo{  
+  font-weight: normal;
+  line-height: 1.3em;
+}
+
+.slogan strong{
+  display: block;
+  font-size: 1.4em;
+}
+
+.slogan::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: .75;
+}
+
+.posibilidades{
+  position: absolute;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/*CAPACIDADES*/
+
+.capacidad{
+  position: absolute;
+  font-size: 0.8em;
+  min-width: 20em;
+  max-width: 25em;
+  padding: 1em 2em;
+}
+
+.capacidad::after{
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background-size: 90% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.capacidad.monitoreo{
+  top: 8em;
+  text-align: right;
+  right: 75%;
+  right: calc(50% + 17em);
+}
+
+.capacidad.monitoreo::after{
+  left: 100%;
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/color-celular-metrics.svg');
+}
+
+.capacidad.detectar{
+  top: 15em;
+  text-align: right;
+  right: 75%;
+  right: calc(50% + 17em);
+}
+
+.capacidad.detectar::after{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/color-detecta-fallas.svg');
+  left: 100%;
+}
+
+.capacidad.mantenimiento{
+  top: 22em;
+  text-align: right;
+  right: 75%;
+  right: calc(50% + 14em);
+}
+
+.capacidad.mantenimiento::after{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/color-predice-arreglo.svg');
+  left: 100%;
+}
+
+.capacidad.plataforma{
+  top: 8em;
+  text-align: left;
+  left: 75%;
+  left: calc(50% + 17em);
+}
+
+.capacidad.plataforma::after{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/color-portatil-metrics.svg');
+  right: 100%;
+}
+
+.capacidad.alertas{
+  top: 15em;
+  text-align: left;
+  left: 75%;
+  left: calc(50% + 17em);
+}
+
+.capacidad.alertas::after{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/color-alertas-rwd.svg');
+  right: 100%;
+}
+
+.capacidad.geolocalizacion{
+  top: 23em;
+  text-align: left;
+  left: 75%;
+  left: calc(50% + 14em);
+}
+
+.capacidad.geolocalizacion::after{
+  background-image: url('http://synermetrix.gutierrezedgar.com/img/icono/color-geolocalizacion.svg');
+  right: 100%;
+}
+
+.discurso{
+  position: relative;
+}
+
+.discurso>.grupo{
+  display: inline-block;
+  vertical-align: top;
+  width: 95%;
+}
+
+.discurso .sinergia{
+  font-size: 0;
+}
+
+.discurso .sinergias img{
+  display: none;
+  margin: auto;  
+}
+
+.beneficios{
+}
+
+.beneficios .grupo{
+  display: inline-block;
+  padding: 1em 1em;
+  font-size: 0.9em;
+}
+
+.beneficios .beneficio{
+  padding: 0.4em 3em 0.4em 1.5em;
+  width: 49%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  position: relative;
+}
+
+.beneficio::before{
+  content: '';
+  display: block;
+  position: absolute;
+  right: 100%;
+  width: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.discurso .titulo{
+  font-weight: normal;
+}
+
+.discurso .titulo strong{
+  font-size: 1.1em;
+}
+
+.genera-valor{
+  background-attachment: fixed ;
+  background-position: center ;
+  background-size: cover ;
+  background-repeat: no-repeat ;
+  position: relative;
+}
+
+.genera-valor::before{
+  content: '';
+  position: absolute;
+  padding: 1em 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: 
+    linear-gradient(
+      to bottom, 
+      rgba(63,139,245,0.7) 100%,
+      rgba(57,113,246,0.1) 0%);
+}
+
+.genera-valor>*{
+  position: relative;
+  z-index: 2;
+}
+
+.genera-valor>.titulo{
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.genera-valor>.parrafo{
+  padding: 1em 1.6em 2em;
+  font-size: 0.9em;
+  display: inline-block;
+  max-width: 60em;
+}
+
+.genera-valor .grupo{
+  background-color: rgba(255,255,255,.9);
+  width: 100%;
+}
+
+.genera-valor .tarjetas{
+  overflow: hidden;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.genera-valor .tarjetas::before,
+.genera-valor .tarjetas::after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  background-color: rgba(255,255,255,.9);
+  height: 50%;
+  z-index: 1;
+}
+
+.genera-valor .tarjetas::before{
+  top: 0;
+  left: 0;
+}
+
+.genera-valor .tarjetas::after{
+  bottom: 0;
+  right: 0;
+}
+
+.genera-valor .tarjetas .titulo{
+  font-size: 1.2em;
+  padding: 1em 0;
+}
+
+.genera-valor .tarjeta{
+  width: 50%;
+  padding: 1em 2em 2em;
+  text-align: left;
+  text-align: justify;
+  font-size: 0.8rem;
+  position: relative;
+  z-index: 2;
+}
+
+.genera-valor .tarjeta>*{
+  z-index: 2;
+}
+
+.genera-valor .tarjeta::before{
+  margin-top: 1em;
+  content: '';
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 5em;
+  text-align: left;  
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: auto 5em;
+}
+
+.plataforma{
+  
+}
+
+.plataforma>.titulo{
+  line-height: 1em;
+  font-size: 1.2em;
+}
+
+.plataforma .parrafo{
+  font-size: 0.8em;
+  max-width: 60em;
+  padding: 1em 2em;
+}
+
+.plataforma .esquema{
+  padding: 1.5em 1em;
+  padding: 2.5vmin 1em;
+}
+
+.casos{
+  background-color: #fff;  
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/whitediamond.png');
+  background-attachment: fixed;
+  background-size: 5em auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.casos>.titulo{
+  line-height: 1em;
+  font-size: 1.3em;
+}
+
+.casos .tarjetas{
+  padding-top: 1.5em;
+  padding-top: 5vmin;
+}
+
+.tarjeta.caso{
+  background-color: rgba(255,255,255,.7);
+  width: 50%;
+  min-height: 20em;
+  padding: 2em;
+  font-size: 0.9rem;
+  background-position: 50% 30em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  position: relative;
+}
+
+.tarjeta.caso:hover{
+  background-position: 50% 50%;  
+}
+
+.tarjeta.caso::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(63, 139, 245,0);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+  transition: all ease .3s;
+}
+
+.tarjeta.caso:hover::before {
+  background-color: rgba(63, 139, 245,.6);
+  transition: all ease .5s .5s;
+}
+
+.tarjeta.caso,
+.tarjeta.caso .svg,
+.tarjeta.caso .titulo
+{
+  will-change: background, fill, color, transform;
+  transition: all ease .5s;
+}
+
+.tarjeta.caso:hover .svg{
+  transform: scale(1.1);
+}
+
+.casos .caso:hover .grupo.svg {
+    background-color: rgba(255,255,255,0);
+}
+
+.tarjeta.caso:nth-child(2),
+.tarjeta.caso:nth-child(3),
+.tarjeta.caso:nth-child(6),
+.tarjeta.caso:nth-child(7),
+.tarjeta.caso:nth-child(10)
+{
+  background-color: rgba(248,248,248,.7);
+}
+
+.grupo.svg{
+  background: #FFF;
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: 0 0 1em rgba(220,220,220,.5);  
+  overflow: hidden;
+}
+
+.tarjeta.caso:hover .grupo.svg{
+  box-shadow: 0 0 0 0 rgba(255,255,255,0);
+}
+
+.grupo.svg .svg{
+  font-size: 1.5em;
+  padding: 0.5em;
+  display: block;
+  height: 5em;
+  width: 5em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.caso .titulo{
+  padding: 1em;
+  line-height: 1em;
+}
+
+.caso .parrafo{  
+  max-width: 20em;
+  font-size: 0.9em;
+}
+
+.casos{ /*borrar*/
+  padding-bottom: calc(8vmin + 3em);
+}
+
+.casos .cta {
+  margin: 4em auto 1em;
+}
+
+.pie-pagina{
+  margin-top: -3em;
+  line-height: 3em;
+  opacity: 0.9;
+}
+
+
+@-webkit-keyframes peque-grande{
+  0% {transform: scale(0);}
+}
+
+
+@keyframes peque-grande{
+  0% {transform: scale(0);}
+}
+
+@-webkit-keyframes rotan-iconos{
+  100% { transform: rotate(360deg)}
+}
+
+@keyframes rotan-iconos{
+  100% { transform: rotate(360deg)}
+}
+
+@media (max-width: 959px){  
+  .discurso .sinergias img.movil{
+    display: block;
+  }
+    
+  .posibilidades p.capacidad{
+    right: initial;
+    left: initial; 
+    padding: 1em;
+    min-width: 17em;
+  }  
+  
+  .posibilidades .capacidad.monitoreo,
+  .posibilidades .capacidad.mantenimiento{
+    left: 0%;
+  } 
+  
+  .posibilidades .capacidad.plataforma,
+  .posibilidades .capacidad.geolocalizacion  {
+    right: 0%;
+  }
+  
+  .posibilidades .capacidad.detectar
+  {
+    left: -2%;
+  }
+  
+ .posibilidades .capacidad.alertas
+  {
+    right: -2%;
+  }
+  
+  .nube{
+    top: 11em;
+  }
+  
+  .grupo .iconos{
+    top: 8em;
+  }
+  
+  .ilustracion{
+    background-position: 50% -2.5em;
+  }
+  
+  .ilustracion::before{
+    background-position: 50% -1.2em;
+  }
+
+  .ilustracion::after {
+    height: 45%;
+    background-size: auto 130%;
+  }
+  
+}
+
+@media (max-width: 680px)
+{ 
+  /*ILUSTRACION*/
+  
+  #inicio.contenido{
+    padding-top: 100vh;
+  }
+  
+  .menu a.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 1em 1em;
+    padding: 0.5em 0;
+  }
+  
+  .banner {
+    min-height: 100vh;
+  }
+  
+  .ilustracion {
+    transform: translateX(-25%) translateY(-12em);
+    width: 200%;
+    height: 200%;
+  }
+  
+  .nube{
+    top: 10em;
+    display: none;
+  }
+  
+  .grupo .iconos{
+    top: 6em;
+    font-size: 0.9em;
+  }
+  
+  .ilustracion::before{
+    background-position: 50% -20em;
+    background-size: auto 60em;
+    opacity: 0.3;
+  }
+    
+  .posibilidades {
+    padding-top: 4em;
+    position: relative;
+  }
+  
+  .posibilidades p.capacidad {
+    display: inline-block;
+    font-size: 1em;
+    font-size: 2.75vmin;
+    left: 0;
+    margin-bottom: 0.3em;
+    margin-left: 0;
+    max-width: 100%;
+    min-width: initial;
+    padding: 0.5em 0.8em;
+    padding-top: 4.4em;
+    position: relative;
+    right: 0;
+    text-align: center;
+    text-shadow: 0 0 0.5em #1a86f3;
+    top: 0;
+    vertical-align: top;
+    width: 45%;    
+    min-height: 9em;
+  }
+  
+  .posibilidades .capacidad::after {
+    left: initial;
+    right: 100%;
+    font-size: 0.7em;
+    transform: translateY(-60%);
+    display: block;
+    position: absolute;
+    transform: none;
+    right: 50%;
+    top: 1em;
+    transform: translateX(50%);
+  }
+  
+  p.capacidad br {
+    display: none;
+  }
+  
+  .banner::after {
+    height: 10em;
+    font-size: 4vmin;
+  }
+  
+  .ilustracion::after{
+    display: none;
+  }
+  
+  /*MENU*/
+  
+  .menu{
+    text-align: left;
+  }
+  
+  .menu .logo {
+    position: absolute;
+    left: 0;
+    transform: none;    
+    padding: 0.3em 0;
+    margin: 0;
+    border-radius: 0 0 1em 0;
+    text-align: center;
+    width: 12em;
+  }
+  
+  .menu .botonera{
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+  }
+  
+  .menu .cta{
+    margin: 0.5em 1.5em;
+    max-width: 4em;
+    overflow: hidden;
+    color: rgba(255,255,255,0);
+  }
+  
+  .menu .cta::before{
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  
+  .slogan {
+    font-size: 0.7em;
+    font-size: 2.6vmin;     
+  }
+    
+  .discurso .sinergias img.mini{
+    display: block;
+  }  
+  
+  .discurso .sinergias img.movil{
+    display: none !important;
+  }
+  
+  .genera-valor .tarjeta{
+    width: 100%;
+    min-height: 16rem;
+  }
+  
+  .genera-valor .tarjetas::before,
+  .genera-valor .tarjetas::after{
+    width: 100%;
+    height: 16rem;
+  }
+  
+  .genera-valor .tarjetas::after{
+    bottom: 25%;
+  }
+  
+  .beneficios .beneficio{
+    width: 100%;
+  }
+  
+  .tarjeta.caso{    
+    min-height: 18em;
+    width: 100%;
+  }
+}
+
+
+@media (max-height: 680px)  and (orientation: landscape) 
+{ 
+  
+  .posibilidades p.capacidad {
+    padding: 0.2em 1em 1.2em 5em;
+    text-align: left;
+    min-height: initial;
+    font-size: 0.78em;
+  }  
+  
+  .posibilidades .capacidad::after {
+    transform: translateY(-50%);
+    left: 0;
+    top: 30%;
+  }
+  
+}
+
+@media (max-width: 460px)
+{
+  .caso{
+    width: 100%;
+  }
+  
+  .caso .titulo{
+    font-size: 4vmin;
+    word-break: break-all;
+  }
+  
+  html .posibilidades p.capacidad {
+    font-size: 0.8em;
+  }
+}
+
+
+@media (min-width: 960px)
+{  
+  
+  .discurso .sinergias img.full{
+    display: block;
+    max-width: 26em;
+  }
+  
+  .discurso>.grupo{
+    width: 49%;
+  }
+  
+  .beneficios .grupo{
+    padding-left: 2.5em;
+  }
+  
+  .beneficios .beneficio{
+    width: 100%;
+    padding: 0.4em 1em;
+  }
+  
+  .beneficios .beneficio::before{
+    font-size: 1em;
+  }
+  
+  .tarjeta.caso{
+    width: 33%;
+    min-height: 16em;
+  }
+  
+  .tarjeta.caso:nth-child(odd){
+    background-color: rgba(255,255,255,.7);
+  }
+
+  .tarjeta.caso:nth-child(even)
+  {
+    background-color: rgba(248,248,248,.7);
+  }
+  
+  .tarjeta.caso:last-child{
+    background-color: rgba(255,255,255,.7);
+  }
+  
+  .caso .parrafo{
+    font-size: 0.85em;
+  }
+}
+
+@media (min-width: 1024px)
+{
+  .menu .enlace {
+    font-size: 0.7em;
+  }
+
+  .genera-valor .tarjeta{
+    width: 25%;
+  }
+  
+  .genera-valor .tarjetas::before,
+  .genera-valor .tarjetas::after{
+    width: 25%;
+    height: 100%;
+  }  
+  
+  .genera-valor .tarjetas::after{
+    bottom: 0;
+    right: 25%;
+  }
+  
+  .beneficios .beneficio{
+    width: 100%;
+  }
+  
+  .beneficios .titulo{
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px){
+  
+  .fondo-industral-iot,
+  .genera-valor{
+    background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-industrial-synermetrix-full.jpg') ;
+  }
+
+  .fondo-cielo,
+  .banner
+  {  
+    background-image: url('http://synermetrix.gutierrezedgar.com/img/cielo-full.jpg');
+  }
+
+  .fondo-card-industrial,
+  .caso.industrial{
+    background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-industrial-full.jpg');
+  }
+
+  .fondo-card-manufactura,
+  .caso.manufactura{
+    background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-manufactura-full.jpg');
+  }
+
+  .fondo-card-automotriz,
+  .caso.automotriz{
+    background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-automotriz-full.jpg');
+  }
+
+  .fondo-card-agricola,
+  .caso.agricola{
+    background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-agricola-full.jpg');
+  }
+
+  .fondo-card-agricola,
+  .caso.agricola{
+    background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-agricola-full.jpg');
+  }
+
+  .fondo-card-smartcity,
+  .caso.smartcity{
+    background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-smartcities-full.jpg');
+  }
+
+  .fondo-card-construccion,
+  .caso.construccion{
+    background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-construccion-full.jpg');
+  }
+
+  .fondo-card-reparacion,
+  .caso.reparacion{
+    background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-reparacion-full.jpg');
+  }
+
+  .fondo-card-energia,
+  .caso.energia{
+    background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-energia-full.jpg');
+  }
+
+  .fondo-card-logistica,
+  .caso.logistica{
+    background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-logistica-full.jpg');
+  }
+
+  .fondo-card-salud,
+  .caso.salud{
+    background-image: url('http://synermetrix.gutierrezedgar.com/img/fondo-salud-full.jpg');
+  }
+  
+  .menu .logo{    
+    padding: 1em 2.6em;
+    width: 16em;
+  }
+  .menu .botonera{
+    width: calc((96% - (16em + 14em)));
+    font-size: 1.2em;
+  }
+  
+  .contenido{
+    padding-top: 45em;
+  }
+  
+  .banner{
+    min-height: 45em;
+  }
+  
+  .banner::after{
+    height: 13em;
+  }
+  
+  .ilustracion{
+    background-position: 50% -1.5em;
+  }
+  
+  .ilustracion::after{
+    background-image: url(http://synermetrix.gutierrezedgar.com/img/dedo-mano-full.png);    
+    height: 60%;    
+    background-size: auto 100%;
+  }
+  
+  .ilustracion::before{
+    background-image: url('http://synermetrix.gutierrezedgar.com/img/circuito.svg');
+    background-position: 50% -7.8em;
+    background-size: auto 45em;
+  }
+  
+  .nube{
+    font-size: 1.2em;
+    top: 10em;
+  }
+  
+  .grupo .iconos{
+    font-size: 1.2em;
+    top: 6.8em;
+  }
+  
+  .slogan{
+    font-size: 1.0em;
+  }
+  
+  .capacidad{
+    font-size: 1.1em;
+    padding: 1em;
+  }
+  
+  .capacidad::after{
+    font-size: 1.25em;
+  }
+  
+  .capacidad.monitoreo,
+  .capacidad.detectar,
+  .capacidad.mantenimiento
+  {
+    right: initial;
+  }
+  
+  .capacidad.monitoreo{
+    top: 7em;
+    left: 1%;
+  }
+  
+  .capacidad.detectar
+  {
+    left: 3%;
+  }
+  
+  .capacidad.mantenimiento
+  {
+    top: 23em;
+    left: 8%;
+  }
+  
+  .capacidad.plataforma,
+  .capacidad.alertas,
+  .capacidad.geolocalizacion
+  {
+    left: initial;
+  }
+  
+  .capacidad.plataforma{
+    top: 7em;
+    right: 1%;
+  }
+  
+  .capacidad.alertas
+  {
+    right: 3%;
+  }
+  
+  .capacidad.geolocalizacion
+  {
+    top: 23em;
+    right: 8%;
+  }
+  
+  .parrafo,
+  .plataforma .parrafo{
+    font-size: 1em;
+  }
+  
+  .seccion{
+    font-size: 1.1em;
+  }
+  
+  .plataforma>.titulo{
+    font-size: 1.6em;
+    padding-bottom: 1em;
+  }
+  
+  .genera-valor .tarjetas{    
+    max-width: 85%;
+    margin: auto;
+    padding-bottom: 2rem;
+  }
+  
+  .casos>.titulo{
+    font-size: 1.6em;
+  }
+  
+  .tarjeta.caso{
+    width: 20%;
+    min-height: 21em;
+    font-size: 1.1rem;
+  }
+  
+  .tarjeta.caso:last-child{
+    background-color: rgba(248,248,248,.7);
+  }
+}

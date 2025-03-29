@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Quejas y Sugerencias | Gestión de Solicitudes y Tareas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd;
+        }
+        header {
+            background-color: #0d47a1;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #1565c0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        .apartado {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #90caf9;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .apartado h2 {
+            margin-top: 0;
+            color: #0d47a1;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #0d47a1;
+        }
+        label {
+            font-weight: bold;
+            color: #0d47a1;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #90caf9;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0d47a1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1565c0;
+        }
+        .task-list, .request-list, .response-list {
+            margin-top: 20px;
+        }
+        .task, .request, .response {
+            background-color: #bbdefb;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0d47a1;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Panel de Administración de Quejas y Sugerencias y Gestión de Solicitudes</h2>
+    </header>
+    <nav>
+        <a href="#gestion-usuarios">Gestión de Usuarios</a>
+        <a href="#recepcion-quejas">Recepción de Quejas</a>
+        <a href="#clasificacion">Clasificación</a>
+        <a href="#soporte">Soporte Técnico</a>
+    </nav>
+    
+    <section>
+        <div class="apartado" id="gestion-usuarios">
+            <h2>Gestión de Usuarios</h2>
+            <p>Gestión de registros, roles y autenticación.</p>
+        </div>
+        <div class="apartado" id="recepcion-quejas">
+            <h2>Recepción de Quejas y Sugerencias</h2>
+            <p>Formulario dinámico para capturar quejas y sugerencias.</p>
+        </div>
+
+<div class="apartado" id="clasificacion">
+    <!-- Gestión de Solicitudes y Tareas -->
+    <div class="container">
+        <h1>Gestión de Solicitudes y Tareas con IA</h1>
+        
+        <!-- Calendarización y Asignación de Tareas -->
+        <section id="task-section">
+            <h2>Calendarización y Asignación de Tareas</h2>
+            <form id="taskForm">
+                <label for="task">Descripción de la tarea:</label>
+                <input type="text" id="task" placeholder="Ingrese la tarea" required>
+
+                <label for="date">Fecha de ejecución:</label>
+                <input type="date" id="date" required>
+
+                <button type="button" onclick="assignTask()">Asignar Tarea</button>
+            </form>
+
+            <div class="task-list" id="taskList">
+                <h3>Tareas Asignadas</h3>
+            </div>
+        </section>
+
+        <!-- Criterios de Urgencia y Prioridad -->
+        <section id="urgency-section">
+            <h2>Criterios de Urgencia y Prioridad</h2>
+            <form id="requestForm">
+                <label for="description">Descripción de la solicitud:</label>
+                <textarea id="description" placeholder="Ingrese la solicitud" required></textarea>
+
+                <button type="button" onclick="analyzeUrgency()">Definir Prioridad</button>
+            </form>
+
+            <div class="request-list" id="requestList">
+                <h3>Solicitudes Registradas</h3>
+            </div>
+        </section>
+
+        <!-- Definición de Tiempos de Respuesta y Recursos -->
+        <section id="response-section">
+            <h2>Definición de Tiempos de Respuesta y Recursos</h2>
+            <form id="responseForm">
+                <label for="description">Descripción de la solicitud:</label>
+                <textarea id="description-response" placeholder="Ingrese la solicitud" required></textarea>
+
+                <label for="complexity">Complejidad de la tarea:</label>
+                <select id="complexity">
+                    <option value="Baja">Baja</option>
+                    <option value="Media">Media</option>
+                    <option value="Alta">Alta</option>
+                </select>
+
+                <label for="resources">Recursos necesarios:</label>
+                <input type="text" id="resources" placeholder="Ejemplo: equipo, personal, materiales" required>
+
+                <button type="button" onclick="defineResponseTime()">Definir Tiempo de Respuesta</button>
+            </form>
+
+            <div class="response-list" id="responseList">
+                <h3>Respuestas Asignadas</h3>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Calendarización y Asignación de Tareas
+        function assignTask() {
+            let task = document.getElementById("task").value.toLowerCase();
+            let date = document.getElementById("date").value;
+            let department = "General";
+
+            if (task.includes("limpieza") || task.includes("basura") || task.includes("parques")) {
+                department = "Limpieza";
+            } else if (task.includes("calle") || task.includes("bacheo") || task.includes("infraestructura")) {
+                department = "Obras Públicas";
+            } else if (task.includes("salud") || task.includes("hospital") || task.includes("emergencia")) {
+                department = "Salud";
+            } else if (task.includes("seguridad") || task.includes("policía") || task.includes("vigilancia")) {
+                department = "Seguridad";
+            }
+
+            let taskList = document.getElementById("taskList");
+            let taskItem = document.createElement("div");
+            taskItem.className = "task";
+            taskItem.innerHTML = <strong>${task}</strong><br>Departamento Asignado: <span style='color: blue'>${department}</span><br>Fecha: ${date};
+            taskList.appendChild(taskItem);
+        }
+
+        // Criterios de Urgencia y Prioridad
+        function analyzeUrgency() {
+            let description = document.getElementById("description").value.toLowerCase();
+            let priority = "Media";
+
+            if (description.includes("emergencia") || description.includes("urgente") || description.includes("crítico")) {
+                priority = "Alta";
+            } else if (description.includes("revisión") || description.includes("pendiente")) {
+                priority = "Media";
+            } else {
+                priority = "Baja";
+            }
+
+            let requestList = document.getElementById("requestList");
+            let requestItem = document.createElement("div");
+            requestItem.className = "request";
+            requestItem.innerHTML = <strong>${description}</strong><br>Prioridad: <span style='color: ${priority === "Alta" ? "red" : priority === "Media" ? "orange" : "green"}'>${priority}</span>;
+            requestList.appendChild(requestItem);
+        }
+
+        // Definición de Tiempos de Respuesta y Recursos
+        function defineResponseTime() {
+            let description = document.getElementById("description-response").value.toLowerCase();
+            let complexity = document.getElementById("complexity").value;
+            let resources = document.getElementById("resources").value;
+            let responseTime = "48 horas";
+
+            if (complexity === "Alta") {
+                responseTime = "24 horas";
+            } else if (complexity === "Baja") {
+                responseTime = "72 horas";
+            }
+
+            let responseList = document.getElementById("responseList");
+            let responseItem = document.createElement("div");
+            responseItem.className = "response";
+            responseItem.innerHTML = <strong>${description}</strong><br>Complejidad: ${complexity}<br>Recursos Necesarios: ${resources}<br>Tiempo de Respuesta: ${responseTime};
+            responseList.appendChild(responseItem);
+        }
+
+        <div class="apartado" id="soporte">
+            <h2>Mantenimiento y Soporte Técnico</h2>
+            <p>Actualización del sistema y resolución de errores.</p>
+        </div>
+
+
+
+
+    </section>
+</div> 
+    </script>
+<div class="apartado" id="soporte">
+            <h2>Mantenimiento y Soporte Técnico</h2>
+            <p>Actualización del sistema y resolución de errores.</p>
+        </div>
+
+
+</body>
+</html>
